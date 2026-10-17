@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Choose template | PortMaker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;800&family=Fraunces:wght@400;600;700&family=Manrope:wght@400;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">PortMaker</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="create.html">Create</a>
+      <a href="manage.html">Manage</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1>Choose a template</h1>
+    <p class="sub">Your information is saved. Pick how your portfolio should look.</p>
+    <div class="cards3">
+      <div class="card-box">
+        <div class="th th-simple"><i></i><b></b><b></b><b></b><b></b></div>
+        <h3>Simple</h3><p class="sub">Classic editorial layout, easy to read.</p>
+        <button class="btn" data-t="simple">Use Simple</button>
+      </div>
+      <div class="card-box">
+        <div class="th th-modern"><i></i><b></b><b></b><b></b><b></b></div>
+        <h3>Modern</h3><p class="sub">Clean, professional cards in navy and white.</p>
+        <button class="btn" data-t="modern">Use Modern</button>
+      </div>
+      <div class="card-box">
+        <div class="th th-creative"><i></i><b></b><b></b><b></b><b></b></div>
+        <h3>Creative</h3><p class="sub">Bold neo-brutalist split screen.</p>
+        <button class="btn" data-t="creative">Use Creative</button>
+      </div>
+    </div>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/templates.js"></script>
+</body>
+</html>

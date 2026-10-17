@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Create portfolio | PortMaker</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;800&family=Fraunces:wght@400;600;700&family=Manrope:wght@400;600;700;800&family=Space+Mono&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="nav">
+    <a href="index.html" class="logo">PortMaker</a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="create.html">Create</a>
+      <a href="manage.html">Manage</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <h1 id="title">Create portfolio</h1>
+    <p class="sub">Fill in what you want to show. Only your name is required.</p>
+    <form id="f">
+      <h3>Personal information</h3>
+      <div class="pic">
+        <img id="pv" class="ph" hidden alt="Profile preview">
+        <div><label for="photo">Profile picture</label><input type="file" id="photo" accept="image/*"></div>
+      </div>
+      <label for="full_name">Full name</label>
+      <input id="full_name" required>
+      <div class="two">
+        <div><label for="email">Email</label><input type="email" id="email"></div>
+        <div><label for="phone">Contact number</label><input id="phone"></div>
+      </div>
+      <label for="address">Address</label>
+      <input id="address">
+      <label for="about">About me</label>
+      <textarea id="about" rows="4"></textarea>
+      <label for="skills">Skills</label>
+      <input id="skills">
+
+      <h3>Educational background</h3>
+      <div id="g-education"></div>
+      <button type="button" class="btn ghost sm" data-add="education">Add another</button>
+
+      <h3>Projects</h3>
+      <div id="g-projects"></div>
+      <button type="button" class="btn ghost sm" data-add="projects">Add another</button>
+
+      <h3>Work experience</h3>
+      <div id="g-experience"></div>
+      <button type="button" class="btn ghost sm" data-add="experience">Add another</button>
+
+      <h3>Social media and website links</h3>
+      <div id="g-links"></div>
+      <button type="button" class="btn ghost sm" data-add="links">Add another</button>
+
+      <div class="end">
+        <a class="btn ghost" href="manage.html">Cancel</a>
+        <button class="btn">Save and choose template</button>
+      </div>
+    </form>
+  </main>
+
+  <div id="toast" role="status" aria-live="polite"></div>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.45.4/dist/umd/supabase.js"></script>
+  <script src="js/supabase.js"></script>
+  <script src="js/create.js"></script>
+</body>
+</html>
