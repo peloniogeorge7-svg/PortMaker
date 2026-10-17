@@ -49,8 +49,11 @@ Portmaker is a web-based portfolio builder that allows users to create and custo
 | links | jsonb | List of social media / website links |
 ## Project Structure
 PortMaker
-├── css
-├── js
+
+```text
+PortMaker/
+├── css/
+├── js/
 │   ├── create.js
 │   ├── manage.js
 │   ├── preview.js
@@ -61,6 +64,8 @@ PortMaker
 ├── manage.html
 ├── preview.html
 └── templates.html
+```
+
 ## Screenshot of the System
 - Homepage
   <img width="1893" height="898" alt="image" src="https://github.com/user-attachments/assets/1d66b3f0-c12e-4f1a-b79d-d04ffb87f346" />
@@ -80,15 +85,16 @@ PortMaker
 - Template 3: Creative 
 <img width="1382" height="822" alt="image" src="https://github.com/user-attachments/assets/be098692-308f-4c99-8eff-dca973a9a0e8" />
 ## How to Test
-- 1. Open the published website URL.
-- 2. Click Create portfolio and fill in the form.
-- 3. Click Save and choose template. The data is saved to Supabase.
-- 4. Choose a template to generate the portfolio.
-- 5. Use Change template to try the other two designs.
-- 6. Go to Manage to view, edit or delete a portfolio.
-- 7. Refresh the page to confirm the saved data remains available.
+1. Open the published website URL.
+2. Click **Create Portfolio** and fill in the form.
+3. Click **Save and Choose Template**. The data is saved to Supabase.
+4. Choose a template to generate the portfolio.
+5. Use **Change Template** to try the other two designs.
+6. Go to **Manage** to view, edit, or delete a portfolio.
+7. Refresh the page to confirm the saved data remains available.
 ## Run Locally
 1. Download or clone this repository.
-2. Open js/supabase.js and set your own Supabase project URL and publishable key.
-3. Create the portfolios table in Supabase using the structure above.
-4. Open the folder in VS Code and run index.html with the Live Server extension.
+2. Open `js/supabase.js` and set your own Supabase project URL and publishable key.
+3. Create the `portfolios` table in Supabase using the structure above.
+4. Open the folder in VS Code and run `index.html` using the Live Server extension.
+
